@@ -13,6 +13,7 @@
 	  <p>Title: <%= record.title %></p>
 	  <p>Artist: <%= record.artist %></p>
 	  <img src="<%= record.cover_art %>">
+	  <%= link_to "Show page", record_path(record) %> 
 	<% end %>
     <%= yield %>
   </body>
