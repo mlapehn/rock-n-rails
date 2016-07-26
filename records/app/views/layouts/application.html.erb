@@ -9,6 +9,11 @@
   </head>
 
   <body>
+	<% @records.each do |record| %>
+	  <p>Title: <%= record.title %></p>
+	  <p>Artist: <%= record.artist %></p>
+	  <img src="<%= record.cover_art %>">
+	<% end %>
     <%= yield %>
   </body>
 </html>
