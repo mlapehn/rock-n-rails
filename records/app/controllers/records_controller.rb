@@ -8,5 +8,9 @@ class RecordsController < ApplicationController
 		@record = Record.find(params[:id])
 		render :show 
 	end
+	def new
+		@record = Record.new
+    	render :new #optional
+  	end
 
 end
